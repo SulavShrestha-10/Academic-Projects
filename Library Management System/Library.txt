@@ -1,0 +1,4 @@
+Da Vinci Code,Dan Brown,25,$5
+Perfect Kill,Helen Fields,35,$2
+Walk the Wire,David Baldacci,20,$3
+The Alchemist,Paulo Coelho,30,$4
