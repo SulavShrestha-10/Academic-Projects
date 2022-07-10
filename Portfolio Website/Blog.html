@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Portfolio Website" />
+    <meta name="keywords" content="Portfolio, CV" />
+    <meta name="author" content="Sulav Shrestha" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Blog</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Making the navigation bar using div tag.-->
+    <div class="menubar">
+      <!--Using the ul tag to create the list of nav bar titles.-->
+      <ul>
+        <!--Adding links to the navbar.-->
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <br /><br /><br />
+    <!--Creating a div tag for the page-->
+    <div class="main">
+      <div class="blog">
+        <!--Adding a heading tag in the div tag-->
+        <h1 class="bold">How technology has affected my life.</h1>
+        <h4 style="font-family: 'KoHo', sans-serif">20th May 2021</h4><!--Adding a inline CSS-->
+        <br />
+        <!--Using paragraph tag to add text in the page.-->
+        <p class="paragraph">
+          Everyone uses technologies these days. There have been so many great
+          technological inventions. We are so immersed in technology that our
+          life practically is being dependent on it. Same things apply to me as
+          well. In my daily life, I use technology every hour of the day. One of
+          the reasons is because I am an IT student. But, even so, I use
+          technology too much of my own good. One could say that I am basically
+          a technology addict. Using technology has its own advantages as well
+          as disadvantages for a person. For me, I would have to say it is more
+          advantageous.
+          <br />
+          I like to surf on the internet a lot. My day goes by scrolling down
+          multiple social media. I surf on the internet for information. It’s
+          amazing how by simply scrolling through my social media can give me so
+          many information. I get to know what is happening all around the
+          world. The co-vid situation of different countries. What my favorite
+          people are going through during these tough times. I get to connect
+          with so many people within few seconds. I find this very amusing. Its
+          like the whole world is within my pocket. I get to learn many more
+          things through technology. Apart from this, I get to watch my favorite
+          shows, football matches and so on with ease. <br />
+          I believe I am too much dependent in technology. Sometimes I find
+          myself unconsciously looking at my phone for no reason. I tend to
+          sleep very late at night. I lose my sense of time while surfing in the
+          internet. I used to go out a lot with my friends when I was not so
+          familiar with technology. But now, I would rather stay at my home and
+          use my phone than to go out with my friends. I feel overwhelmed using
+          technology. However, I am trying the not let the internet and
+          technology control my life.
+        </p>
+      </div>
+      <!--Creating a div tag in the page.-->
+      <div class="sliderbox">
+        <!--Adding images inside a div tag-->
+        <div class="slides">
+          <img class="slider" src="Images/Slider/1.jpg" />
+          <img class="slider" src="Images/Slider/2.jpg" />
+          <img class="slider" src="Images/Slider/3.jpg" />
+          <img class="slider" src="Images/Slider/4.jpg" />
+          <br />
+          <!--Using button tag to create a button tag-->
+          <button class="btn" onclick="change">
+            <button class="btn" onclick="change(-1)">Previous</button>
+            <button class="btn" onclick="change(1)">Next</button>
+          </button>
+          <!--Using a internal js for the button tag-->
+          <script>
+            var x = 0; //Creating a variable x and setting it as 0
+            show(x);//Display the image at the x index. 
+
+            function change(a) {
+              x += a;//increase or decrease the value of x
+              show(x);//Display the image at the x index. 
+            }
+
+            function show(a) {
+              var n = document.getElementsByClassName("slider");//put the elements of 'slider' class and keep it in array
+
+              if (a > n.length - 1) {
+                x = 0;//if a is greater than the length of var n then, set the value of x to 0
+              }
+              if (a < 0) {
+                x = n.length - 1;//if a is less than 0 then, set the value of x to last index of the array
+              }
+              for (var i = 0; i < n.length; i++) {
+                n[i].style.display = "none";//Do not display any image
+              }
+
+              n[x].style.display = "block";//Display the image with var x 
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

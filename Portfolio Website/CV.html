@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Portfolio Website" />
+    <meta name="keywords" content="Portfolio, CV" />
+    <meta name="author" content="Sulav Shrestha" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My CV</title>
+    <style>
+      /*Using internal CSS to add style to the body part of html*/
+      body {
+        /*Setting the background color, styling and font of the page */
+        background-color: antiquewhite;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Making the navigation bar using div tag.-->
+    <div class="menubar">
+     <!--Using the ul tag to create the list of nav bar titles.-->
+      <ul>
+         <!--Adding links to the navbar.-->
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!--Creating a Div tag for the CV page-->
+    <div class="resume">
+      <!--Creating two more div tags inside the resume div tag-->
+      <div class="leftside">
+        <div class="content" style="padding: 10px">
+          <!--Using inline CSS to add padding-->
+          <div class="about">
+            <!--Creating a div tag to make an about section-->
+            <div class="info">
+              <!--using heading tag and paragraph tag to add text inabout section-->
+              <h1 class="bold">About Me</h1>
+              <p class="semi" style="line-height: 150%">
+                <!--Using inline CSS to add line height-->
+                I am an open minded person with very dedicated personality. I
+                always try to improve myself trying to get the best version of
+                myself. I try to get along with everyone I meet. I am thoughtful
+                and fun loving person. Apart from work, I always try to have fun
+                with my friends and family.
+              </p>
+            </div>
+          </div>
+          <div class="academic">
+            <!--Creating a div tag to make an academic section-->
+            <div class="info">
+              <!--Using heading tag and ul tag to create add the list in academic section-->
+              <h1 class="bold">Education</h1>
+              <ul class="semi">
+                <li>Vidya Byayam English High School[2005-2018]</li>
+                <li>-Secondary Education</li>
+                <li>Trinity International College[2018-2020]</li>
+                <li>-Management</li>
+                <li>Islington College[2020-2023]</li>
+                <li>-Computing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience">
+            <!--Creating a div tag to make an experience section-->
+            <div class="info">
+              <!--Using heading tag and ul tag to create add the list in experience section-->
+              <h1 class="bold">Experience</h1>
+              <ul class="semi">
+                <li>ABC Tech Company</li>
+                <li>- Junior Developer</li>
+                <li>- 2022-2024</li>
+                <li>XYZ Web Tech</li>
+                <li>- Senior Developer</li>
+                <li>- 2025-2028</li>
+                <li>SAD Coding Industry</li>
+                <li>- Senior Developer</li>
+                <li>- 2028-Present</li>
+              </ul>
+            </div>
+          </div>
+          <div class="hobby">
+            <!--Creating a div tag to make an hobby section-->
+            <div class="info">
+              <!--Using heading tag and ul tag to create add the list in hobby section-->
+              <h1 class="bold">My Hobbies</h1>
+              <ul class="semi">
+                <li>Watching Football and Animes</li>
+                <li>Coding</li>
+                <li>Reading Novels</li>
+                <li>Playing Games</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightside">
+        <!--Creating a div tag and inserting a image inside it using img tag.-->
+        <div class="profile">
+          <img src="Images/CV/profile.png" alt="Profile Picture" />
+        </div>
+        <div class="content" style="padding: 10px">
+          <!--Adding a inline CSS in the div tag.-->
+          <div class="intro">
+            <div class="info">
+              <!--Adding heading tags inside the div tag.-->
+              <h1 class="bold">Sulav Shrestha</h1>
+              <h1 class="semi">Software Developer</h1>
+
+              <!--Creating a list using ul tag-->
+              <ul class="semi" style="list-style: none">
+                <!--Using inline CSS-->
+                <li>Gokarna, Kathmandu</li>
+                <li>9865234510</li>
+                <li>sulavshrestha@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="info">
+              <!--Adding heading tag inside the div tag.-->
+              <h1 class="bold">My skills</h1>
+              <!--Creating a list using ul tag-->
+              <ul class="semi" style="list-style: none">
+                <!--Using inline CSS-->
+                <li>HTML</li>
+                <li>Skill Level = Intermediate</li>
+                <li>JAVA</li>
+                <li>Skill Level = Master</li>
+                <li>Python</li>
+                <li>Skill Level = Intermediate</li>
+                <li>PHP</li>
+                <li>Skill Level = Master</li>
+              </ul>
+            </div>
+          </div>
+          <div class="social">
+            <div class="info">
+              <!--Adding heading tag inside the div tag.-->
+              <h1 class="bold">My Social Media</h1>
+              <!--Creating a list using ul tag-->
+              <ul style="list-style: none">
+                <!--Using inline CSS-->
+                <li class="bold">Facebook</li>
+                <li>sulav@facebook</li>
+                <li class="bold">Instagram</li>
+                <li>sulav@instagram</li>
+                <li class="bold">Linkedin</li>
+                <li>sulav@linkedin</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

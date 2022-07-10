@@ -1,0 +1,266 @@
+/*Importing font family from external site*/
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500&family=Poppins:wght@200;400;500&display=swap");
+
+/*setting margin and padding as 0*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*Creating two classes for the html*/
+.bold {
+  font-family: "KoHo", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.semi {
+  font-family: "KoHo", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/*The CSS for body tag and navigation bar of the website*/
+body {
+  font-family: "poppins", sans-serif;
+}
+
+/*The CSS for the menubar division*/
+.menubar {
+  /*aligning the text and content justifying*/
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+/*styling the ul tag*/
+.menubar ul {
+  /*adding height and display style*/
+  display: inline-flex;
+  height: 30px;
+  list-style: none;
+}
+
+/*styling the list inside the ul tag*/
+.menubar ul li {
+  /*adding width, margin and border*/
+  width: 120px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 5px;
+  border: 5px;
+}
+/*styling the links of navigation bar*/
+.menubar ul li a {
+  /*Chaniging the font weight and size*/
+  text-decoration: none;
+  font-weight: 500px;
+  font-size: 25px;
+}
+
+/*making the links more interactive using hover and active tags*/
+a:hover {
+  /*adding color and font weight*/
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+a:active {
+  /*adding color and font weight*/
+  color: red;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+/* The CSS of Home Page*/
+.container {
+  /*Aligning the text at the center using top and bottom*/
+  font-size: 30px;
+  position: absolute;
+  height: 100vh;
+  top: 50%;
+  bottom: 50%;
+}
+
+.container span {
+  /*Changing the color of span tag*/
+  color: maroon;
+}
+
+
+/*The CSS of CV Page*/
+.resume {
+  /*Adding height and width and display attribute for the tag*/
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+.resume .leftside {
+  /*Adding background and flex display*/
+  background: whitesmoke;
+  padding: 20px;
+  flex: 70%;
+}
+.resume .rightside {
+  /*Adding background and flex display, aligning text at center*/
+  flex: 30%;
+  background: wheat;
+  text-align: center;
+}
+
+.resume .rightside .profile {
+  /*Giving width and height to profile tag*/
+  width: 100%;
+  height: 280px;
+  align-items: center;
+}
+
+.resume .rightside .profile img {
+  /*Giving width and height to the image*/
+  width: 100%;
+  height: 100%;
+}
+
+.resume .rightside .content {
+  /*Adding padding in content*/
+  padding: 5px 25px;
+}
+.resume .rightside .content ul {
+  /*Removing the list style of ul and adding padding*/
+  list-style: none;
+  padding: 10px;
+}
+
+.resume .rightside .content ul li {
+  /*Adding padding to the list*/
+  padding: 10px;
+}
+
+.resume .leftside .content ul {
+  /*Removing the list style of ul and adding padding*/
+  list-style: none;
+  padding: 10px;
+}
+
+.resume .leftside .content ul li {
+  /*Adding padding to the list*/
+  padding: 10px;
+}
+
+/*The CSS for Research page*/
+.research {
+  /*Adding background color along with margin and padding*/
+  background-color: whitesmoke;
+  padding: 15px;
+  margin: 50px;
+}
+
+.research .img {
+  /*Adding margin, height and width to the image*/
+  margin: 30px;
+  height: 500px;
+  width: 600px;
+}
+
+/*The CSS of Blog Page*/
+.main {
+  /*Using display flex attribute*/
+  display: flex;
+}
+
+.main .sliderbox {
+  /*Adding width, margin, position and flex display*/
+  flex: 40%;
+  max-width: 700px;
+  margin: 20px;
+  position: relative;
+}
+
+.main .sliderbox .slider {
+  /*Adding width and height*/
+  width: 700px;
+  height: 700px;
+}
+
+.btn {
+  /*Styling the button using width, font size and family*/
+  font-size: 15px;
+  width: 26%;
+  font-family: "poppins", sans-serif;
+}
+.main .blog {
+ /*Adding width, margin, and flex display*/
+  flex: 60%;
+  max-width: 800px;
+  width: 50%;
+}
+
+.paragraph {
+  /*Adding background color, solid border, heigth and padding and font family with justify align*/
+  text-align: justify;
+  font-family: "KoHo", sans-serif;
+  border: 1px solid burlywood;
+  padding: 10px;
+  background-color: wheat;
+  line-height: 200%;
+}
+
+
+/* The CSS of Contact Page*/
+.box {
+  /*Adding margin and width*/
+  width: 90%;
+  margin: 60px;
+}
+.contactbox {
+  /*Adding color and flex display attribute*/
+  display: flex;
+  background-color: whitesmoke;
+}
+.boxleft {
+  /*Adding flex attribute and padding*/
+  flex: 60%;
+  padding: 60px;
+}
+.boxright {
+  /*adding flex attribute and padding with background color*/ 
+  flex: 40%;
+  padding: 60px;
+  background-color: wheat;
+}
+.box p {
+  /*Adding font weight and margin*/
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+input {
+  /*Adding height and width with border bottom only*/
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+textarea {
+  /*Adding width and padding with box sizing*/
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  /*Adding background color with width and no border*/
+  background: wheat;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+
